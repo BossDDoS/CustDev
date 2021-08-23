@@ -8,46 +8,50 @@
     <link rel="stylesheet" href="../CustDev/css/normalize.css">
     <link rel="stylesheet" href="../CustDev/css/style.css">
 
-    <meta name="keywords" content="старт-ап, стартапер, продукт, дизайнер, курс, интервью, результат,">
+    <meta name="keywords" content="старт-ап, стартапер, продукт, дизайнер, курс, интервью, результат">
     <meta name="description" content="Если вы не делаете
         Customer Development —  вы не управляете движением">
 </head>
 
 <body class="page-body">
-    <header class="main-header">
-        <ul class="location-navigation">
-            <li class="location-item"><a class="selected" href="#">Санкт-Петербург</a></li>
-            <li class="location-item"><a href="#">Москва</a></li>
-            <li class="location-item"><a href="#">Минск</a></li>
-        </ul>
-        <nav class="main-navigation">
-            <ul class="site-navigation">
-                <li><a href="#">Программа</a></li>
-                <li><a href="#">Отзывы</a></li>
-                <li><a href="#">Стоимость</a></li>
-                <li><a href="#">О преподавателе</a></li>
+    <header class="main-header ">
+        <div class="wrapper">
+            <ul class="location-navigation">
+                <li class="location-item"><a class="selected" href="#">Санкт-Петербург</a></li>
+                <li class="location-item"><a href="#">Москва</a></li>
+                <li class="location-item"><a href="#">Минск</a></li>
             </ul>
+            <nav class="main-navigation">
+                <ul class="site-navigation">
+                    <li><a href="#">Программа</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Стоимость</a></li>
+                    <li><a href="#">О преподавателе</a></li>
+                </ul>
+            </nav>
             <div class="button-navigation">
                 <a class="button site-navigation__record" href="#">Запись на курс</a>
             </div>
-        </nav>
-        <div class="slogan">
-            <p class="heading">САНКТ-ПЕТЕРБУРГ 10-21 МАЯ</p>
-            <p class="heading__dsc"> Начни делать<br>
-                Customer Development<br>
-                и проверять гипотезы</p>
-            <p class="heading__info">На оффлайн курсе из 5 воркшопов</p>
-            <div class="">
-                <a class="button slogan__record" href="#">Записаться</a>
-            </div>
-        </div>
-        <div class="aside">
-            <p>Оценка<br> <span class="mark">9 из 10</span></p>
-            <p>Иван Матвиенко</p>
-            <p><span>Wimprof</span></p>
-            <p><a href="#">Читать отзыв</a></p>
         </div>
     </header>
+
+    <div class="slogan">
+        <p class="heading">САНКТ-ПЕТЕРБУРГ 10-21 МАЯ</p>
+        <p class="heading__dsc"> Начни делать<br>
+            Customer Development<br>
+            и проверять гипотезы</p>
+        <p class="heading__info">На оффлайн курсе из 5 воркшопов</p>
+        <div class="">
+            <a class="button slogan__record" href="#">Записаться</a>
+        </div>
+    </div>
+    <div class="aside">
+        <p>Оценка<br> <span class="mark">9 из 10</span></p>
+        <p>Иван Матвиенко</p>
+        <p><span>Wimprof</span></p>
+        <p><a href="#">Читать отзыв</a></p>
+    </div>
+
     <main class="container">
         <h1 hidden>Customer Development</h1>
         <section class="stats">
@@ -277,21 +281,20 @@
         <section class="gallery">
             <h2>Как проходили прошлые потоки</h2>
             <div>
-                <img src="image/photo1.jpg" width="340" height="266" alt="">
-                <img src="image/photo2.jpg" width="340" height="266" alt="">
-                <img src="image/photo3.jpg" width="340" height="266" alt="">
-                <img src="image/photo4.jpg" width="340" height="266" alt="">
-                <img src="image/photo5.jpg" width="340" height="266" alt="">
-                <img src="image/photo6.jpg" width="340" height="266" alt="">
-                <img src="image/photo7.jpg" width="340" height="266" alt="">
-                <img src="image/photo8.jpg" width="340" height="266" alt="">
+                <div class="gallery__photo">
+                    <img src="image/photo1.jpg" width="340" height="266" alt="">
+                    <img src="image/photo2.jpg" width="340" height="266" alt="">
+                    <img src="image/photo3.jpg" width="340" height="266" alt="">
+                    <img src="image/photo4.jpg" width="340" height="266" alt="">
+                    <img src="image/photo5.jpg" width="340" height="266" alt="">
+                    <img src="image/photo6.jpg" width="340" height="266" alt="">
+                    <img src="image/photo7.jpg" width="340" height="266" alt="">
+                    <img src="image/photo8.jpg" width="340" height="266" alt="">
+                </div>
             </div>
         </section>
         <section class="price">
             <h2>Стоимость для компаний</h2>
-            <div>
-                <p>Выгодно</p>
-            </div>
             <div class="price__item">
                 <p class="price-course">32 900 Р</p>
                 <p class="price-tarif">1 сотрудник</p>
@@ -347,7 +350,7 @@
                 <input type="text" name="name" placeholder="Имя">
                 <input type="tel" name="tel" placeholder="Телефон">
                 <input type="email" name="email" placeholder="E-mail">
-                <input type="submit" name="Record" value="Записатсья на курс">
+                <input type="submit" name="record" value="Записатсья на курс">
             </form>
         </div>
     </main>
@@ -358,7 +361,7 @@
                 <li class="location-item"><a href="#">Москва</a></li>
                 <li class="location-item"><a href="#">Минск</a></li>
             </ul>
-                <a class="button site-navigation__record" href="#">Запись на курс</a>
+            <a class="button site-navigation__record" href="#">Запись на курс</a>
         </section>
         <section class="footer-other">
             <ul class="other-list">
